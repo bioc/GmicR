@@ -2,6 +2,8 @@
 #' @import shiny
 #' @importFrom DT dataTableOutput datatable
 #' @importFrom data.table melt
+#' @importFrom grDevices pdf
+#' @importFrom stats na.omit
 #' @param Auto_WGCNA_Output R object with GMIC bayesian network
 #' @param Filter_unconnected_ME a boolean value. If TRUE, the default,
 #' unconnected modules will be removed from the final network. If FALSE,
