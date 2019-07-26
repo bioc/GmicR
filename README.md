@@ -1,8 +1,7 @@
 # GmicR
 Combines WGCNA and xCell with Bayesian network learning to generate a Gene-Module Immune-Cell network
 
-Are you a fan of CD4 T cells? Do B cells really interested you? Are curious about how fibroblasts or macrophages in the
-lung may be influenced by gene modules? These are the types of relationships that can be visualized by this package, which are 
+Are you a fan of CD4 T cells? Do B cells really interest you? Are you curious about how fibroblasts or macrophages may be influenced by gene modules in the lungs? These are the types of relationships that can be visualized by this package, which are 
 "learned" from bulk tissue RNAseq data. Both human and mouse expression data are supported.
 
 The goal behind this tool is to provide biomedical researchers, like myself, with a way to come up with 
