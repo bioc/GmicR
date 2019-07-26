@@ -2,7 +2,7 @@ Package: GmicR
 Type: Package
 Title: Combines WGCNA and xCell readouts with bayesian network
         learrning to generate a Gene-Module Immune-Cell network (GMIC)
-Version: 0.99.3
+Version: 0.99.4
 Author: Richard Virgen-Slane
 Maintainer: The package maintainer <RVS.BioTools@gmail.com>
 Description: This package uses bayesian network learning to detect relationships between 
@@ -21,4 +21,4 @@ biocViews: Software, SystemsBiology, GraphAndNetwork, Network,
         NetworkInference, GUI, ImmunoOncology, GeneExpression,
         QualityControl, Bayesian, Clustering
 NeedsCompilation: no
-Packaged: 2019-07-25 22:42:21 UTC; richardvirgen-slane
+Packaged: 2019-07-26 00:43:30 UTC; richardvirgen-slane
