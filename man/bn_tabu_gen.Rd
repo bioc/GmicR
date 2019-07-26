@@ -53,7 +53,7 @@ bootstraps_replicates = 50, score = "bds")
 \seealso{
 \code{\link[bnlearn]{arc.strength}}
 
-\code{\link[bnlearn]{score-based algorithms}}
+\code{\link[bnlearn]{hc}}
 
 \code{\link[bnlearn]{score}}
 }

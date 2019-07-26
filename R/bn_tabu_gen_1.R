@@ -22,7 +22,7 @@
     #' @inheritParams bnlearn::tabu
     #' @return The learned bayesian network
     #' @seealso \code{\link[bnlearn]{arc.strength}}
-    #' @seealso \code{\link[bnlearn]{score-based algorithms}}
+    #' @seealso \code{\link[bnlearn]{hc}}
     #' @seealso \code{\link[bnlearn]{score}}
     #' @export
 
