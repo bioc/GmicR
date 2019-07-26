@@ -1,6 +1,5 @@
 #' Visualized network
 #' @import shiny
-#' @importFrom DT dataTableOutput datatable
 #' @importFrom data.table melt
 #' @importFrom grDevices pdf
 #' @importFrom stats na.omit

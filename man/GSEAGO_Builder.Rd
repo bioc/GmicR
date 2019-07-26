@@ -32,7 +32,4 @@ GO enrichment for module names
 }
 \note{
 gene names must be official gene symbol
-GOname work flow inspired by: 
-\href{https://www.bioconductor.org/packages/devel/bioc/vignettes/
-CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html}{Module_GO_Names}.
 }

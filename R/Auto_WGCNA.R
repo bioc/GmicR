@@ -19,9 +19,6 @@
     #' @note
     #' This is a wrapper for WGCNA.
     #' @export
-    #' @note for macosx user try installing from:
-    #' \href{https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/
-    #' Rpackages/WGCNA/#manualInstall}{Compiled binary Mac OS X}.
     #' @return Returns a lists containing network input parameters used 
     #' for WGCNA,
     #' WGCNA module information, and quality control plots.
@@ -29,8 +26,8 @@
     #' sample_dat_dir<-system.file("extdata", "sample_dat.Rdata", 
     #' package = "GmicR", mustWork = TRUE)
     #' load(sample_dat_dir)
-    #' GMIC_Builder<-Auto_WGCNA(sample_dat, mergeCutHeight = 0.35, 
-    #' minModuleSize = 10)
+    #' # GMIC_Builder<-Auto_WGCNA(sample_dat, mergeCutHeight = 0.35, 
+    #' # minModuleSize = 10)
     
     Auto_WGCNA<-function(datExpr, colname_correct = TRUE, minModuleSize = 10, 
     deepSplit = 4, networkType = "signed hybrid", TOMType = "unsigned", 
@@ -154,7 +151,6 @@
     #' @examples file_dir<-system.file("extdata", "IRIS_xCell_sig.txt", 
     #' package = "GmicR", mustWork = TRUE)
     #' Xcell_sig<-xCell_loader(file_dir)
-    #' head(Xcell_sig)
     #' @export
     
     xCell_loader<-function(File=NULL){

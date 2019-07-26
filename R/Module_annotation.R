@@ -136,9 +136,6 @@
     #' for each module. 
     #' @note
     #' gene names must be official gene symbol
-    #' GOname work flow inspired by: 
-    #' \href{https://www.bioconductor.org/packages/devel/bioc/vignettes/
-    #' CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html}{Module_GO_Names}.
     #' @export
     
     GSEAGO_Builder<-function(Auto_WGCNA_OUTPUT, species='Homo sapiens', 
@@ -221,10 +218,7 @@
     #' package = "GmicR", mustWork = TRUE)
     #' load(GMIC_Builder_dir)
     #' GMIC_Builder<-GO_Module_NameR(GMIC_Builder, cutoff_size = 100)
-    #' @note
-    #' GOname work flow inspired by: 
-    #' \href{https://www.bioconductor.org/packages/devel/bioc/vignettes/
-    #' CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html}{Module_GO_Names}.
+
     
     GO_Module_NameR<-function(Auto_WGCNA_OUTPUT, cutoff_size=100){
     

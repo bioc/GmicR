@@ -19,11 +19,6 @@ with module GO names.
 \description{
 GO enrichment for module names
 }
-\note{
-GOname work flow inspired by: 
-\href{https://www.bioconductor.org/packages/devel/bioc/vignettes/
-CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html}{Module_GO_Names}.
-}
 \examples{
 GMIC_Builder_dir<-system.file("extdata", "GMIC_Builder.Rdata", 
 package = "GmicR", mustWork = TRUE)

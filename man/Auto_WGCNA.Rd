@@ -60,17 +60,13 @@ Carries out WGCNA with default settings or custom settings
 }
 \note{
 This is a wrapper for WGCNA.
-
-for macosx user try installing from:
-\href{https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/
-Rpackages/WGCNA/#manualInstall}{Compiled binary Mac OS X}.
 }
 \examples{
 sample_dat_dir<-system.file("extdata", "sample_dat.Rdata", 
 package = "GmicR", mustWork = TRUE)
 load(sample_dat_dir)
-GMIC_Builder<-Auto_WGCNA(sample_dat, mergeCutHeight = 0.35, 
-minModuleSize = 10)
+# GMIC_Builder<-Auto_WGCNA(sample_dat, mergeCutHeight = 0.35, 
+# minModuleSize = 10)
 }
 \seealso{
 \code{\link[WGCNA]{blockwiseModules}}
