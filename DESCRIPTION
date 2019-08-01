@@ -2,13 +2,13 @@ Package: GmicR
 Type: Package
 Title: Combines WGCNA and xCell readouts with bayesian network learrning to generate a Gene-Module 
     Immune-Cell network (GMIC)
-Version: 0.99.10
+Version: 0.99.11
 Author: Richard Virgen-Slane
 Maintainer: The package maintainer <RVS.BioTools@gmail.com>
 Description: This package uses bayesian network learning to detect relationships between 
     Gene Modules detected by WGCNA and immune cell signatures defined by xCell.
     It is a hypothesis generating tool.
-License: GPL-2
+License: GPL-2 + file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.1
