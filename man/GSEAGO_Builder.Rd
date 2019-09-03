@@ -5,7 +5,7 @@
 \title{GO enrichment for module names}
 \usage{
 GSEAGO_Builder(Auto_WGCNA_OUTPUT, species = "Homo sapiens",
-  ontology = "BP", colname_correct = TRUE)
+  ontology = "BP", GO_conditional = FALSE, colname_correct = TRUE)
 }
 \arguments{
 \item{Auto_WGCNA_OUTPUT}{output from Auto_WGCNA function.}
@@ -15,6 +15,10 @@ GSEAGO_Builder(Auto_WGCNA_OUTPUT, species = "Homo sapiens",
 \item{ontology}{string either 'BP'(Biological Process; default), 
 'CC'(Cellular Component),
 or 'MF' (Molecular Function).}
+
+\item{GO_conditional}{A logical indicating whether the calculation 
+should condition on the GO structure. 
+will not be carried out. If TRUE,}
 
 \item{colname_correct}{a boolean value. If TRUE (default), "." in gene 
 names will be replaced
