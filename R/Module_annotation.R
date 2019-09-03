@@ -131,6 +131,9 @@
     #' @param ontology string either 'BP'(Biological Process; default), 
     #' 'CC'(Cellular Component),
     #' or 'MF' (Molecular Function).
+    #' @param GO_conditional A logical indicating whether the calculation 
+    #' should condition on the GO structure. 
+    #' will not be carried out. If TRUE, 
     #' @return Lists with gene ontology 
     #' enrichment analysis, performed using GOstats,
     #' for each module. 
@@ -139,7 +142,7 @@
     #' @export
     
     GSEAGO_Builder<-function(Auto_WGCNA_OUTPUT, species='Homo sapiens', 
-    ontology = 'BP', colname_correct = TRUE){
+    ontology = 'BP', GO_conditional = FALSE,colname_correct = TRUE){
     
     datExpr<-Auto_WGCNA_OUTPUT$Network_Output$datExpr
     modules<-as.vector(Auto_WGCNA_OUTPUT$Network_Output$modules)
@@ -170,7 +173,7 @@
     Category::GSEAGOHyperGParams(name = 'Homo sapiens GO',
     geneSetCollection = gsc, geneIds = colnames(datExpr)[modules==i],
     universeGeneIds = ref_genes, ontology = ontology, pvalueCutoff = 0.05,
-    conditional = FALSE, testDirection = 'over')))
+    conditional = GO_conditional, testDirection = 'over')))
     print(i)
     }
     
@@ -192,7 +195,7 @@
     Category::GSEAGOHyperGParams(name = 'Mus musculus GO',
     geneSetCollection = gsc, geneIds = colnames(datExpr)[modules==i],
     universeGeneIds = ref_genes, ontology = ontology, pvalueCutoff = 0.05,
-    conditional = FALSE, testDirection = 'over')))
+    conditional = GO_conditional, testDirection = 'over')))
     print(i)
     }
     } 
