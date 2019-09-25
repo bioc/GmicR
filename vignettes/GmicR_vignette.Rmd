@@ -125,7 +125,7 @@ from 50 randomly selected samples
 ## WGCNA module detection
 Auto_WGCNA is a wrapper for WGCNA. Not all options are avaible. For more
 advanced features please use WGCNA.
-```{r module detection, echo=TRUE}
+```{r module detection, echo=TRUE, eval = FALSE}
 library(GmicR)
 
 GMIC_Builder<-Auto_WGCNA(sample_dat, 
@@ -181,7 +181,7 @@ head(GMIC_Builder$Query)
 This function constructs a library for gene ontology enrichment, which will
 be used for module naming with the GO_Module_NameR function. Both functions 
 were inspired by: https://www.bioconductor.org/packages/devel/bioc/vignettes/CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html
-```{r GO enrichment, echo=TRUE}
+```{r GO enrichment, echo=TRUE, eval = FALSE}
 GMIC_Builder<-GSEAGO_Builder(GMIC_Builder,
   species = "Homo sapiens", ontology = "BP")
 
@@ -256,7 +256,7 @@ these relationships from probability distributions generated from mutilated
 network queries. A correlation matrix is generated and a threshold is applied
 to specify a slope cut off for inverse relationships. By default the threhold is
 set to -0.3.
-```{r detecting inverse relationships, eval=FALSE}
+```{r detecting inverse relationships, echo=TRUE}
 GMIC_Final<-InverseARCs(GMIC_net, threshold = -0.3)
 ```
 
