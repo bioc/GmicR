@@ -3,10 +3,10 @@
     #' @param numGenes integer indicating the number of random genes to test 
     #' for hub gene detection.
     #' Default is 500.
-    #' @param Find_hubs boolean value. If TRUE, module hub genes will be returned. 
+    #' @param Find_hubs logical value. If TRUE, module hub genes will be returned. 
     #' If FALSE (default),
     #' intramodularConnectivity will be returned without hub gene identification.
-    #' @param calculate_intramodularConnectivity a boolean value. If TRUE 
+    #' @param calculate_intramodularConnectivity a logical value. If TRUE 
     #' (default), the intramodularConnectivity
     #' will be caluculated using the intramodularConnectivity function from WGCNA. 
     #' If FALSE, a table of modules
@@ -121,7 +121,7 @@
     #' @importFrom AnnotationDbi toTable GOAllFrame GOFrame
     #' @importFrom Category GSEAGOHyperGParams
     #' @import GOstats
-    #' @param colname_correct a boolean value. If TRUE (default), "." in gene 
+    #' @param colname_correct a logical value. If TRUE (default), "." in gene 
     #' names will be replaced
     #' with "-". This corrects a name change that is induced by R when creating a 
     #' data.frame. If FALSE,

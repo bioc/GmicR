@@ -20,7 +20,7 @@ or 'MF' (Molecular Function).}
 should condition on the GO structure. 
 will not be carried out. If TRUE,}
 
-\item{colname_correct}{a boolean value. If TRUE (default), "." in gene 
+\item{colname_correct}{a logical value. If TRUE (default), "." in gene 
 names will be replaced
 with "-". This corrects a name change that is induced by R when creating a 
 data.frame. If FALSE,

@@ -39,7 +39,9 @@ try downloading a compiled version from:
 
 ## Additional CRAN packages
 ```{r additional packages, echo=TRUE, eval=FALSE}
-install.packages(c("shiny","DT","bnlearn", "gRbase",  "gRain", "data.table"))
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install('GmicR')
 ```
 
 For macosx users experiencing installation errors,
@@ -127,11 +129,6 @@ load(sample_dat_dir)
 # Step 2 for GMIC building: gene module detection and annotation 
 For simplicity, we will carryout WGCNA using 1000 randomly selected genes 
 from 50 randomly selected samples
-```{r sample data, echo=TRUE, eval=FALSE}
-sample_ids<-sample(rownames(datExpr), 50) # 50 sampled rows
-sample_genes<-sample(colnames(datExpr), 1000) # 1000 sampled columns
-sample_dat<-datExpr[sample_ids,sample_genes] # data subset
-```
 
 
 ## WGCNA module detection
@@ -180,7 +177,7 @@ GMIC_Builder$Output_plots$net_dendrogram
 ## Module annotation
 WGCNA functions intramodularConnectivity and chooseOneHubInEachModule are
 used to build a dataframe with gene module information.
-```{r GO module annotations, echo=TRUE, eval=FALSE}
+```{r GO module annotations, echo=TRUE}
 # Module hubs and Gene influence
 GMIC_Builder<-Query_Prep(GMIC_Builder,  
   calculate_intramodularConnectivity= TRUE,
@@ -193,7 +190,7 @@ head(GMIC_Builder$Query)
 This function constructs a library for gene ontology enrichment, which will
 be used for module naming with the GO_Module_NameR function. Both functions 
 were inspired by: https://www.bioconductor.org/packages/devel/bioc/vignettes/CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html
-```{r GO enrichment, echo=TRUE, eval=FALSE}
+```{r GO enrichment, echo=TRUE}
 GMIC_Builder<-GSEAGO_Builder(GMIC_Builder,
   species = "Homo sapiens", ontology = "BP")
 
@@ -268,14 +265,14 @@ these relationships from probability distributions generated from mutilated
 network queries. A correlation matrix is generated and a threshold is applied
 to specify a slope cut off for inverse relationships. By default the threhold is
 set to -0.3.
-```{r detecting inverse relationships, eval=FALSE, echo=TRUE}
+```{r detecting inverse relationships, eval=FALSE}
 GMIC_Final<-InverseARCs(GMIC_net, threshold = -0.3)
 ```
 
 
 ## GmicR shiny app
 Once complete, the GMIC network can be viewed using the Gmic_viz shiny app. 
-```{r Visualizing network, eval=FALSE, echo=TRUE}
+```{r Visualizing network, echo=TRUE}
 GMIC_Final_dir<-system.file("extdata", "GMIC_Final.Rdata", 
                           package = "GmicR", mustWork = TRUE)
 load(GMIC_Final_dir)

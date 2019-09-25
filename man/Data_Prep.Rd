@@ -11,7 +11,7 @@ Data_Prep(Auto_WGCNA_OUTPUT = NULL, Remove_ME0 = FALSE,
 \arguments{
 \item{Auto_WGCNA_OUTPUT}{R object generated from Auto_WGCNA function.}
 
-\item{Remove_ME0}{a boolean value. If FALSE (default), ME0 is not 
+\item{Remove_ME0}{a logical value. If FALSE (default), ME0 is not 
 removed.
 If TRUE the eigengene for module 0 is removed prior to analysis.}
 

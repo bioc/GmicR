@@ -4,7 +4,7 @@
 #' @importFrom grDevices pdf
 #' @importFrom stats na.omit
 #' @param Auto_WGCNA_Output R object with GMIC bayesian network
-#' @param Filter_unconnected_ME a boolean value. If TRUE, the default,
+#' @param Filter_unconnected_ME a logical value. If TRUE, the default,
 #' unconnected modules will be removed from the final network. If FALSE,
 #' all modules will be shown.
 #' @return a shiny object for network visualization. 

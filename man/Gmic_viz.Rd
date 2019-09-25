@@ -9,7 +9,7 @@ Gmic_viz(Auto_WGCNA_Output, Filter_unconnected_ME = TRUE)
 \arguments{
 \item{Auto_WGCNA_Output}{R object with GMIC bayesian network}
 
-\item{Filter_unconnected_ME}{a boolean value. If TRUE, the default,
+\item{Filter_unconnected_ME}{a logical value. If TRUE, the default,
 unconnected modules will be removed from the final network. If FALSE,
 all modules will be shown.}
 }

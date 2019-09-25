@@ -14,7 +14,7 @@ Auto_WGCNA(datExpr, colname_correct = TRUE, minModuleSize = 10,
 data frame in which columns are genes and rows ar samples. NAs are
 allowed, but not too many. See \code{checkMissingData} below and details.}
 
-\item{colname_correct}{a boolean value. If TRUE (default), "." in gene 
+\item{colname_correct}{a logical value. If TRUE (default), "." in gene 
 names will be replaced
 with "-". This corrects a name change that is induced by R when creating 
 a data.frame. If FALSE,

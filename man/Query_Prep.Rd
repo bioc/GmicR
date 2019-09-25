@@ -14,11 +14,11 @@ Query_Prep(Auto_WGCNA_OUTPUT, numGenes = 500, Find_hubs = FALSE,
 for hub gene detection.
 Default is 500.}
 
-\item{Find_hubs}{boolean value. If TRUE, module hub genes will be returned. 
+\item{Find_hubs}{logical value. If TRUE, module hub genes will be returned. 
 If FALSE (default),
 intramodularConnectivity will be returned without hub gene identification.}
 
-\item{calculate_intramodularConnectivity}{a boolean value. If TRUE 
+\item{calculate_intramodularConnectivity}{a logical value. If TRUE 
 (default), the intramodularConnectivity
 will be caluculated using the intramodularConnectivity function from WGCNA. 
 If FALSE, a table of modules
