@@ -181,7 +181,7 @@ head(GMIC_Builder$Query)
 This function constructs a library for gene ontology enrichment, which will
 be used for module naming with the GO_Module_NameR function. Both functions 
 were inspired by: https://www.bioconductor.org/packages/devel/bioc/vignettes/CVE/inst/doc/WGCNA_from_TCGA_RNAseq.html
-```{r GO enrichment, echo=TRUE, eval = FALSE}
+```{r GO enrichment, echo=TRUE}
 GMIC_Builder<-GSEAGO_Builder(GMIC_Builder,
   species = "Homo sapiens", ontology = "BP")
 
