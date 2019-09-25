@@ -27,22 +27,13 @@ knitr::opts_chunk$set(
 ## Installation of Bioconductor packages
 ```{r Bioconductor installation, echo=TRUE, eval=FALSE}
 if (!requireNamespace("BiocManager", quietly = TRUE))
-install.packages("BiocManager")
-BiocManager::install(c("org.Mm.eg.db","org.Hs.eg.db", "GOstats", "WGCNA",
-"AnnotationDbi", "GSEABase","ape", "Category",
-"graph", "Rgraphviz", "RBGL"))
+    install.packages("BiocManager")
+BiocManager::install('GmicR')
 ```
 For macosx users experiencing WGCNA installation errors,
 try downloading a compiled version from: 
 
   * https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/#manualInstall
-
-## Additional CRAN packages
-```{r additional packages, echo=TRUE, eval=FALSE}
-if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
-BiocManager::install('GmicR')
-```
 
 For macosx users experiencing installation errors,
 try downloading OS X binaries from:
