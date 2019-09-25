@@ -125,7 +125,7 @@ from 50 randomly selected samples
 ## WGCNA module detection
 Auto_WGCNA is a wrapper for WGCNA. Not all options are avaible. For more
 advanced features please use WGCNA.
-```{r module detection, echo=TRUE, eval = FALSE}
+```{r module detection, echo=TRUE, results=FALSE}
 library(GmicR)
 
 GMIC_Builder<-Auto_WGCNA(sample_dat, 
