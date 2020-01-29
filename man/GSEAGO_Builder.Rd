@@ -4,8 +4,13 @@
 \alias{GSEAGO_Builder}
 \title{GO enrichment for module names}
 \usage{
-GSEAGO_Builder(Auto_WGCNA_OUTPUT, species = "Homo sapiens",
-  ontology = "BP", GO_conditional = FALSE, colname_correct = TRUE)
+GSEAGO_Builder(
+  Auto_WGCNA_OUTPUT,
+  species = "Homo sapiens",
+  ontology = "BP",
+  GO_conditional = FALSE,
+  colname_correct = TRUE
+)
 }
 \arguments{
 \item{Auto_WGCNA_OUTPUT}{output from Auto_WGCNA function.}

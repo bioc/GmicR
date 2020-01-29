@@ -4,10 +4,19 @@
 \alias{Auto_WGCNA}
 \title{Carries out WGCNA with default settings or custom settings}
 \usage{
-Auto_WGCNA(datExpr, colname_correct = TRUE, minModuleSize = 10,
-  deepSplit = 4, networkType = "signed hybrid", TOMType = "unsigned",
-  corFnc = "bicor", mergeCutHeight = 0.25, sft_RsquaredCut = 0.85,
-  reassignThreshold = 1e-06, maxBlockSize = 25000)
+Auto_WGCNA(
+  datExpr,
+  colname_correct = TRUE,
+  minModuleSize = 10,
+  deepSplit = 4,
+  networkType = "signed hybrid",
+  TOMType = "unsigned",
+  corFnc = "bicor",
+  mergeCutHeight = 0.25,
+  sft_RsquaredCut = 0.85,
+  reassignThreshold = 1e-06,
+  maxBlockSize = 25000
+)
 }
 \arguments{
 \item{datExpr}{ Expression data. A matrix (preferred) or 
@@ -28,11 +37,11 @@ module detection should be to module splitting, with 0 least and 4 most sensitiv
 \code{\link[dynamicTreeCut]{cutreeDynamic}} for more details. }
 
 \item{networkType}{ network type. Allowed values are (unique abbreviations of) \code{"unsigned"},
-\code{"signed"}, \code{"signed hybrid"}. See \code{\link{adjacency}}. }
+\code{"signed"}, \code{"signed hybrid"}. See \code{\link[WGCNA]{adjacency}}. }
 
 \item{TOMType}{ one of \code{"none"}, \code{"unsigned"}, \code{"signed"}, \code{"signed Nowick"},
 \code{"unsigned 2"}, \code{"signed 2"} and \code{"signed Nowick 2"}. If \code{"none"}, adjacency
-will be used for clustering. See \code{\link{TOMsimilarityFromExpr}} for details.}
+will be used for clustering. See \code{\link[WGCNA]{TOMsimilarityFromExpr}} for details.}
 
 \item{corFnc}{ character string specifying the function to be used to calculate co-expression
 similarity for correlation networks. 
