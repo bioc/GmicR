@@ -39,9 +39,10 @@ module detection should be to module splitting, with 0 least and 4 most sensitiv
 \item{networkType}{ network type. Allowed values are (unique abbreviations of) \code{"unsigned"},
 \code{"signed"}, \code{"signed hybrid"}. See \code{\link[WGCNA]{adjacency}}. }
 
-\item{TOMType}{ one of \code{"none"}, \code{"unsigned"}, \code{"signed"}, \code{"signed Nowick"},
-\code{"unsigned 2"}, \code{"signed 2"} and \code{"signed Nowick 2"}. If \code{"none"}, adjacency
-will be used for clustering. See \code{\link[WGCNA]{TOMsimilarityFromExpr}} for details.}
+\item{TOMType}{ one of \code{"none"}, \code{"unsigned"}, \code{"signed"}. If \code{"none"}, adjacency
+will be used for clustering. If \code{"unsigned"}, the standard TOM will be used (more generally, TOM
+function will receive the adjacency as input). If \code{"signed"}, TOM will keep track of the sign of
+correlations between neighbors. }
 
 \item{corFnc}{ character string specifying the function to be used to calculate co-expression
 similarity for correlation networks. 
