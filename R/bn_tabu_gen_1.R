@@ -137,7 +137,7 @@
     
     #' Identifies arcs between nodes with inverse relationships
     #' @export
-    #' @importFrom gRain querygrain grain.CPTspec
+    #' @importFrom gRain querygrain
     #' @importFrom gRbase compile
     #' @param Output a data frame containing the output of 
     #' BN_Conditions function.
