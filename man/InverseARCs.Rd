@@ -25,5 +25,10 @@ Identifies arcs between nodes with inverse relationships
 GMIC_net_dir<-system.file("extdata", "GMIC_net.Rdata", 
 package = "GmicR", mustWork = TRUE)
 load(GMIC_net_dir)
+bnlearn_version<-packageVersion("bnlearn")
+if(bnlearn_version < "4.6"){
+message("Inverse ARCS requires bnlearn version 4.6. See https://www.bnlearn.com/")
+}else if(bnlearn_version >= "4.6"){
 GMIC_Final<-InverseARCs(GMIC_net, threshold = -0.3)
+}
 }
