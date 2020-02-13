@@ -156,12 +156,10 @@
 
     # checking version of bnlearn ---------------------------------------------
     bnlearn_version<-packageVersion("bnlearn")
-        
+    
     if(bnlearn_version < "4.6"){
-    message("Please update to bnlearn 4.6 from https://www.bnlearn.com/")
+        message("Please update to bnlearn 4.6 from https://www.bnlearn.com/")
     }else if(bnlearn_version >= "4.6"){
-        
-        
     fitted<-Output$Output_tabu_net$net_fitted
     input_arcs<-arcs(fitted)
     
