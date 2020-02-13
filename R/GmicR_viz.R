@@ -1,6 +1,5 @@
 #' Visualized network
 #' @import shiny
-#' @importFrom data.table melt
 #' @importFrom grDevices pdf
 #' @importFrom stats na.omit
 #' @param Auto_WGCNA_Output R object with GMIC bayesian network
@@ -31,7 +30,7 @@ Module_selection_frame$GO_module_name, sep = ": ")
 Module_selection_frame$GSEAGO_ID<-c(Module_selection_frame$modules+1)
 
 # annotating GSEAGO_query table
-table_GSEAGO_query<-data.table::melt(GSEAGO_query,
+table_GSEAGO_query<-reshape2::melt(GSEAGO_query,
 id.vars=c("GOBPID", "Pvalue", "OddsRatio", 
 "ExpCount", "Count", "Size", 
 "Term","Genes"))

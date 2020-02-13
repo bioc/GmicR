@@ -267,13 +267,9 @@ to specify a slope cut off for inverse relationships. By default the threhold is
 set to -0.3.
 ```{r detecting inverse relationships, echo=TRUE}
 
-bnlearn_version<-packageVersion("bnlearn")
 
-if(bnlearn_version < "4.6"){
-    message("Inverse ARCS requires bnlearn version 4.6. See https://www.bnlearn.com/")
-}else if(bnlearn_version >= "4.6"){
 GMIC_Final<-InverseARCs(GMIC_net, threshold = -0.3)
-}
+
 ```
 
 
