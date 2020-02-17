@@ -157,6 +157,7 @@
     #' @examples file_dir<-system.file("extdata", "IRIS_xCell_sig.txt", 
     #' package = "GmicR", mustWork = TRUE)
     #' Xcell_sig<-xCell_loader(file_dir)
+    #' plot(Xcell_sig$Bcells)
     #' @export
     
     xCell_loader<-function(File=NULL){
